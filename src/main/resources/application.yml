@@ -1,0 +1,17 @@
+server:
+  port: 8695
+spring:
+  profiles:
+    active: local
+  thymeleaf:
+    excluded-view-names: thymeleaf/*
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+    check-template: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
